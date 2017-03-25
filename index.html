@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>HTML5 Mosaic</title>
+        <link rel="stylesheet" href="css/mosaic.css">
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    </head>
+    <body>
+        <div id="canvasDiv" >
+            <canvas id="mosaicCanvas" class="ui-widget-content"></canvas>
+            <input id="tileColour" class="jscolor" value="000000" />
+            <input id="multipleFileInput" type="file" multiple />
+            <input id="singleFileInput" type="file" />
+        </div>
+
+        <div id="footer">
+            <p id="licences">
+                Licensed under <a href="https://www.gnu.org/licenses/gpl-3.0.txt">GNU GPL v3</a>.
+                Icons by <a href="https://icons8.com">Icons8</a>.
+                Colour picker by <a href="http://jscolor.com/">jscolor</a>.
+            </p>
+        </div>
+
+        <div id="dialog" title="Help">
+            <ul>
+                <li><p>Left click/drag to move tiles; right click/drag to rotate.</p></li>
+                <li><p>Click and drag a line across tiles to cut them, or hold CTRL to select multiple tiles.</p></li>
+                <li><p>Right click an empty area and click Save As to save your work as an image.</p></li>
+                <li><p>Click/drag the toolbar border to move it.</p></li>
+            </ul>
+            <p><img src="images/icon_size.png" alt="Size icon"/><span class="helpSpan">Click and Drag to change tile size.</span></p>
+            <p><img src="images/icon_newTile.png" alt="New Tile icon"/><img src="images/icon_dropdown.png" alt="dropdown icon"/><span class="helpSpan">Click and Drag for a new random tile. Drill down for regular shapes.</span></p>
+            <p><img src="images/icon_userShape.png" alt="Custom Shape icon"/><span class="helpSpan">Click to activate Custom Shape mode.</span></p>
+            <p><img src="images/icon_palette.png" alt="Palette icon"/><span class="helpSpan">Click to open the colour palette.</span></p>
+            <p><img src="images/icon_dropper.png" alt="Colour Dropper icon"/><span class="helpSpan">Click to activate the colour dropper; left click a tile to update its colour, and right click to copy its colour.</span></p>
+            <p><img src="images/icon_clipboard.png" alt="Clipboard icon"/><img src="images/icon_dropdown.png" alt="dropdown icon"/><span class="helpSpan">Drag tiles here to copy them (shortcut: ctrl + c). Drill down to show/hide the contents.</span></p>
+            <p><img src="images/icon_userImages.png" alt="User Images icon"/><img src="images/icon_dropdown.png" alt="dropdown icon" /><span class="helpSpan">Click to load your own images as tiles. Drill down to see what has been loaded.</span></p>
+            <p><img src="images/icon_flipV.png" alt="Flip Vertical icon"/><span class="helpSpan">Click to flip vertically. (shortcut: ctrl + v)</span></p>
+            <p><img src="images/icon_flipH.png" alt="Flip Horizontal icon"/><span class="helpSpan">Click to flip horizontally. (shortcut: ctrl + h)</span></p>
+            <p><img src="images/icon_undo.png" alt="Undo icon"/><span class="helpSpan">Click to undo. (shortcut: ctrl + z)</span></p>
+            <p><img src="images/icon_redo.png" alt="Redo icon"/><span class="helpSpan">Click to redo. (shortcut: ctrl + y)</span></p>
+            <p><img src="images/icon_trash.png" alt="Trash icon"/><span class="helpSpan">Drag tiles here to trash them. (shortcut:  Delete key)</span></p>
+            <p><img src="images/icon_filemenu.png" alt="File Menu icon"/><span class="helpSpan">Click to show/hide File menu.</span></p>
+            <ul id="filemenuUL">
+                <li><img src="images/icon_open.png" alt="Open icon"/><span class="helpSpan">Open a save file. (shortcut: ctrl + o)</span></li>
+                <li><img src="images/icon_save.png" alt="Save icon"/><span class="helpSpan">Save the project. (shortcut: ctrl + s)</span></li>
+                <li><img src="images/icon_bgImage.png" alt="Load Background Image icon"/><span class="helpSpan">Load a background image.</span></li>
+                <li><ul>
+                        <li><img src="images/icon_checked.png" alt="Checked Checkbox icon"/><img src="images/icon_unchecked.png" alt="Unchecked Checkbox icon"/><span class="helpSpan">Show/hide background image.</span></li>
+                    </ul></li>
+
+            </ul>
+            <img src="images/icon_help.png" alt="Help icon"/><span class="helpSpan">Show/hide this dialog.
+        </div>
+        <script src="js/jquery-3.1.1.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/jscolor.min.js"></script>
+    </body>
+</html>

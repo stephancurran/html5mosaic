@@ -1,0 +1,36 @@
+#canvasDiv
+{
+    margin: auto;
+    border: solid black thin;
+    position: relative;
+}
+
+#tileColour
+{
+    position: absolute;
+}
+
+#multipleFileInput, #singleFileInput
+{
+    display: none;
+}
+
+#footer
+{
+    text-align: center;
+}
+
+#dialog img
+{
+    vertical-align: middle;
+}
+
+#dialog #filemenuUL
+{
+    list-style: none;
+}
+
+#dialog .helpSpan
+{
+    padding-left: 1em;
+}
