@@ -1,7 +1,8 @@
-body
+#fireplacePic
 {
-    
+	display: none;
 }
+
 #canvasDiv
 {
     margin: auto;
